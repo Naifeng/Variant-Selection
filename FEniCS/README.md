@@ -33,7 +33,7 @@ for np in 32; do for th in 1; do sh -c "export OMP_NUM_THREADS=$th && mpirun --o
 
 | Runtime     | Mesh size   | np         | th         | Augmented constant |
 | ----------- | ----------- |----------- |----------- |-----------         |
-| ...         | ...         |...         |...          |...                |
+| ...         | ...         |...         |...         |...                 |
 
 1. run the performance prediction model with 
 ```
