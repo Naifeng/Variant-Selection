@@ -9,7 +9,7 @@ Here, we demonstrated our approach using two examples: Halide Blur function and 
 `Baseline` contains naive implementations of the blur operation on CPU and GPU.
 
 In `FEniCS`:
-* `experiments` contains code for FEniCS CFD solver. Dataset can be generated in two ways: varying the parameter linearly and logistically
+* `experiments` contains code for FEniCS CFD solver. Dataset can be generated in two ways: varying the parameter linearly or logistically
 * `prediction_for_linear` contains the performance prediction model for the linearly generated dataset
 * `prediction_for_log` contains the performance prediction model for the logistically generated dataset
 * `results` contains code for plotting the results
@@ -18,11 +18,11 @@ In `Halide`:
 * `Blur` contains code for Halide Blur function on CPU and GPU
 * `FFT` contains code for Halide FFT implementation on CPU and GPU
 
-Details about running experiments are described in README.md within each folder.
+Details about running code are described in README.md within each folder.
 
 ## Dependencies
 
-for performance prediction models
+for performance prediction models:
 
 * python >= 3.6.5
 * tensorflow >=1.8.0 
