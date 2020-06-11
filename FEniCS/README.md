@@ -29,7 +29,7 @@ for np in 32; do for th in 1; do sh -c "export OMP_NUM_THREADS=$th && mpirun --o
 
 
 ## Performance Prediction
-0. In `out.csv`, labels are 
+0. In `out.csv`, the header is 
 
 | Runtime     | Mesh size   | np         | th         | Augmented constant |
 | ----------- | ----------- |----------- |----------- |-----------         |
