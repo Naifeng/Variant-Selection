@@ -7,8 +7,7 @@ Within each file:
 python pred_*.py
 ```
 
-`pred_NN.py` uses common neural networks.
-
-`pred_NN+C.py` uses augmented neural networks.
+* `pred_NN.py` uses common neural networks.
+* `pred_NN+C.py` uses augmented neural networks.
 
 4. In `results`, `plot.ipynb` can be used to plot the speedup. Contents in `.csv` have to be manually inspected now. 

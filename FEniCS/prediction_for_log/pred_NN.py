@@ -9,8 +9,8 @@ FILENAME = "out.csv"
 
 data = np.array(pd.read_csv(FILENAME))
 
-train_data = data[:3000]
-test_data = data[3000:]
+train_data = data[:70]
+test_data = data[70:]
 
 
 train_feature = np.array(train_data[:, [1, 2, 3]])
@@ -32,7 +32,8 @@ test_xs = preprocessing.scale(test_x)
 print(test_xs.shape)
 
 
-L1 = tf.layers.dense(x, 15, tf.nn.relu)
+L1 = tf.layers.dense(x, 5, tf.nn.relu)
+L2 = tf.layers.dense(x, 5, tf.nn.relu)
 prediction = tf.layers.dense(L1,1)
 
 

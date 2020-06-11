@@ -13,18 +13,18 @@ train_data = data[:3000]
 test_data = data[3000:]
 
 
-train_feature = np.array(train_data[:, [1, 2, 3]])
+train_feature = np.array(train_data[:, [1, 2, 3, 4]])
 
 
 train_label = np.array(train_data[:, [0]])
 
 
-test_x = np.array(test_data[:, [1, 2, 3]])
+test_x = np.array(test_data[:, [1, 2, 3, 4]])
 
 
 print(test_data.shape)
 
-x = tf.placeholder(tf.float32, [None, 3])
+x = tf.placeholder(tf.float32, [None, 4])
 y = tf.placeholder(tf.float32, [None, 1])  
 train_feature = preprocessing.scale(train_feature)  
 test_xs = preprocessing.scale(test_x)  
@@ -36,9 +36,8 @@ L1 = tf.layers.dense(x, 15, tf.nn.relu)
 prediction = tf.layers.dense(L1,1)
 
 
-
-
 loss = tf.reduce_mean(tf.square(y - prediction))
+
 
 saver = tf.train.Saver()
 
@@ -63,8 +62,6 @@ print("total parameters: ", total_parameters)
 with tf.Session() as sess:
 
     sess.run(tf.global_variables_initializer())
-
-
 
     print(sess.run(loss, feed_dict={x: train_feature, y: train_label}))
 
