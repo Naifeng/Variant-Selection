@@ -21,7 +21,7 @@ X_test = np.array(test_data[:, [1, 2, 3]])
 
 print(test_data.shape)
 
-x = tf.placeholder(tf.float32, [None, 4])
+x = tf.placeholder(tf.float32, [None, 3])
 y = tf.placeholder(tf.float32, [None, 1])  
 
 X_train = preprocessing.scale(X_train)  
