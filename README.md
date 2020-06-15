@@ -31,5 +31,16 @@ for performance prediction models:
 * scikit-learn >= 0.22.2
 * scipy >= 0.16.0
 
+## Evaluation
+
+When performance prediction models finish testing, a few metrics will be generated:
+
+* MAE: mean absolute error
+* MSE: mean squared error
+* MAPE(>*x*s): mean absolute percentage error defined as:
+
+$MAPE = \frac{100}{N}\sum_i \frac{|t_i - \hat{t_i}|}{t_i}$
+
+* rho: 
 
 
