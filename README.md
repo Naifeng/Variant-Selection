@@ -39,7 +39,7 @@ When performance prediction models finish testing, a few metrics will be generat
 * MSE: mean squared error
 * MAPE(>*x*s): mean absolute percentage error defined as:
 
-$MAPE = \frac{100}{N}\sum_i \frac{|t_i - \hat{t_i}|}{t_i}$
+$`MAPE = \frac{100}{N}\sum_i \frac{|t_i - \hat{t_i}|}{t_i}`$
 
 * rho: 
 
