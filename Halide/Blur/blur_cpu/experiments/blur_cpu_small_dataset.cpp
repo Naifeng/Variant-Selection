@@ -16,11 +16,11 @@ using namespace Halide;
 
 int main(int argc, char **argv) {
     // subject to change: the output file name
-    std::string FILENAME = "halide_blur_cpu_6000_points_Xeon.csv"; 
+    std::string FILENAME = "halide_blur_cpu_250_points_Xeon.csv"; 
     std::ofstream ofile;
     ofile.open(FILENAME);
     // how many data instances to generate
-    int NUM = 1000;
+    int NUM = 50;
     // input size ranges from 2^10 to 2^15
     for (int k = 0; k <= 5; k++){ 
         int p_input = 10 + k;
