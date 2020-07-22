@@ -16,7 +16,7 @@ using namespace Halide;
 
 int main(int argc, char **argv) {
     // subject to change: the output file name
-    std::string FILENAME = "halide_blur_cpu_250_points_Xeon.csv"; 
+    std::string FILENAME = "halide_blur_cpu_300_points_Xeon.csv"; 
     std::ofstream ofile;
     ofile.open(FILENAME);
     // how many data instances to generate
