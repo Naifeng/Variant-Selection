@@ -2,6 +2,8 @@
 
 Given available hardware resources, our [Augmented Neural Network](https://github.com/Naifeng/Augmented-Neural-Network) (NN+C) can be used to pick the best variant for a given kernel, i.e., picking the best available code among several options. This includes choosing between a CPU and a GPU implementation or identifying compilation flags that will be best suited for the kernel. 
 
+For more details, please view the full paper [here](https://naifeng.github.io/assets/pdf/HiPC_NN+C_2020.pdf).
+
 ---
 
 About this repository:
